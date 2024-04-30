@@ -1,10 +1,10 @@
 Colaboradores:
 
-Gabriel Athadeu
-Lucas Castro
-Leonardo Xavier
-Filippo Peruzzo
-Arthur Moreira
+Gabriel Athadeu,
+Lucas Castro,
+Leonardo Xavier,
+Filippo Peruzzo,
+Arthur Moreira.
 
 
 atividade 26/04
