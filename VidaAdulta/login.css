@@ -1,3 +1,5 @@
+
+
 /* ESTILO GERAL */
 * {
     margin: 0;
@@ -7,7 +9,8 @@
 }
 
 body {
-    background-color: white;
+    background: rgb(252,252,252);
+background: radial-gradient(circle, rgba(252,252,252,1) 0%, rgba(255,248,228,1) 100%, rgba(0,212,255,1) 100%, rgba(154,154,247,1) 100%);
     height: 100vh;
 }
 
@@ -24,7 +27,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #6db5f0cb;
+    background-color: #B69A6F;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -38,20 +41,20 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #72b1fa;
+    color: #B69A6F;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #72b1fa;
+    box-shadow: 0px 0px 8px #B69A6F;
     transform: scale(1.05);
 }
 
 /* ESTILO DO CABEÇALHO */
 header {
     background: rgb(252,252,252);
-background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(106,106,252,1) 34%, rgba(0,212,255,1) 100%);
-    padding: 15px 4%;
+background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(178,178,255,1) 22%, rgba(0,212,255,1) 100%);
+    padding: 40px 4%;
 }
 
 header>.interface {
@@ -120,7 +123,7 @@ nav ul li:hover .sub-menu {
 }
 
 .sub-menu li a:hover {
-    background-color: #72b1fa;
+    background-color: rgb(247, 231, 202);
 }
 
 /* ESTILO DO MENU MOBILE */
@@ -130,7 +133,7 @@ nav ul li:hover .sub-menu {
 }
 
 .btn-abrir-menu i{
-    color: #72b1fa;
+    color: #B69A6F;
     font-size: 40px;
 }
 
@@ -160,7 +163,7 @@ nav ul li:hover .sub-menu {
 }
 
 .menu-mobile .btn-fechar i{
-    color: #72b1fa;
+    color: #B69A6F;
     font-size: 30px;
 }
 
@@ -177,7 +180,7 @@ nav ul li:hover .sub-menu {
 }   
 
 .menu-mobile nav ul li a:hover{
-    background-color: #72b1fa;
+    background-color: #B69A6F;
     color: #000;
 }
 
@@ -204,8 +207,6 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-    padding: 15px; 
-    margin-left: 25px;
     color: black;
     font-size: 42px;
     line-height: 40px;
@@ -261,7 +262,7 @@ section.especiliadades .flex {
 
 .especiliadades .especialidades-box i {
     font-size: 70px;
-    color: #72b1fa;
+    color: #B69A6F;
 }
 
 .especiliadades .especialidades-box h3 {
@@ -290,7 +291,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #72b1fa;
+    color: #B69A6F;
     display: block;
 }
 
@@ -305,7 +306,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #72b1fa;
+    background-color: #B69A6F;
     font-size: 22px;
     cursor: pointer;
     transition: .2s;
@@ -364,6 +365,14 @@ section.formulario {
     padding: 80px 4%;
 }
 
+#login {
+    background-color: gray;
+}
+
+#senha {
+    background-color: gray;
+}
+
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -377,7 +386,8 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: #242424;
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(154,154,247,1) 100%, rgba(0,212,255,1) 100%);
     border: 0;
     outline: 0;
     padding: 20px 15px;
@@ -398,8 +408,8 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #72b1fa;
-    color: #000;
+    background-color: #B69A6F;
+    color: #ffffff;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
@@ -421,7 +431,7 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #72b1fa
+    border-top: 2px solid #B69A6F;
 }
 
 footer .line-footer p i {
@@ -630,11 +640,12 @@ footer .line-footer p a {
         margin-top: 30px;
       }
       .form .input-box {
+        color: white;
         width: 100%;
         margin-top: 20px;
       }
       .input-box label {
-        color: #333;
+        color: #ffffff;
       }
       .form :where(.input-box input, .select-box) {
         position: relative;
@@ -717,91 +728,3 @@ footer .line-footer p a {
           row-gap: 15px;
         }
       }
-
-
-
-      
-section.slider{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
-    overflow: hidden;
-}
-
-.slider-content{
-    width: 400%;
-    height: 650px;
-    display: flex;
-}
-
-.slider-content input, .img-mobile{
-    display: none;
-}
-
-.slide-box{
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
-}
-
-.slide-box img{
-    width: 100%;
-}
-
-.nav-manual, .nav-auto{
-    width: 150px;
-    position: absolute;
-    width: 100%;
-    margin-top: 35%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #c7fbf6;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
-}
-
-.nav-manual .manual-btn:hover{
-    background-color: #c7fbf6;
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #c7fbf6;
-}
-
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-
-@media screen and (max-width: 300px) {
-    .img-desktop{
-        display: none;
-    }
-
-    .img-mobile{
-        display: block;
-    }
-
-    .nav-auto, .nav-manual{
-        margin-top: 60%;
-    }
-}

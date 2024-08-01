@@ -1,4 +1,21 @@
 
+
+
+function logar(){
+
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "admin" && senha == "admin"){
+        alert('Sucesso');
+        location.href = "home.html";
+    }else{
+        alert('Usuario ou senha incorretos');
+    }
+
+}
+
+
 let btnMenu = document.getElementById('btn-menu')
 let menu = document.getElementById('menu-mobile')
 let overlay = document.getElementById('overlay-menu')
@@ -24,23 +41,3 @@ function acceptCookies() {
     // Aqui você pode implementar a lógica para recusar os cookies
     document.getElementById('cookieBanner').style.display = 'none';
   }
-
-  
-var radio = document.querySelector('.manual-btn')
-var cont = 1
-
-document.getElementById('radio1').checked = true
-
-setInterval(() => {
-    proximaImg()
-}, 5000)
-
-function proximaImg(){
-    cont++
-
-    if(cont > 3){
-        cont = 1 
-    }
-
-    document.getElementById('radio'+cont).checked = true
-}

@@ -158,7 +158,8 @@ form .btn-enviar input:hover {
 
 /* ESTILO DO CABEÇALHO */
 header {
-    background-color: rgb(248, 237, 217);
+  background: rgb(252,252,252);
+  background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(178,178,255,1) 22%, rgba(0,212,255,1) 100%);
     padding: 40px 4%;
 }
 
