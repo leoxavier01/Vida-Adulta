@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="login.css">
-
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="login.js" defer></script>
+    <meta name="google-signin-client_id" content="500184659278-p8mg49lerm104is02vopt6drcvmsse59.apps.googleusercontent.com">
 
     <title>Vida Adulta</title>
 </head>
@@ -97,7 +98,9 @@
                             <input type="text" placeholder="Login" id="login">
                             <input type="password" placeholder="Senha" id="senha">
                             <input type="submit" onclick="logar(); return false">
-                    
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                            <a href="#" onclick="signOut();">Sign out</a>        <!-- !!!colocar em espaço diferente!!! -->
+                            
                         </form>
                     </div><!--txt-topo-site-->
 
