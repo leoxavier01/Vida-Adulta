@@ -133,8 +133,9 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #B69A6F;
-    border: 0;
+    background-color: #6db5f0cb;
+    border: black;
+    border-width: 0.5px;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;

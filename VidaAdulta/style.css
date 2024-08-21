@@ -805,3 +805,180 @@ section.slider{
         margin-top: 60%;
     }
 }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section2 {
+    margin-bottom: 20px;
+  }
+  
+  .section2-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .list {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .list li {
+    margin-bottom: 5px;
+  }
+
+  .buscar-box{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+
+.buscar-box.ativar{
+    width: 400px;
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .btn-fechar i{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.buscar-box .lupa-buscar i{
+    font-size: 35px;
+}
+
+.buscar-box .input-buscar{
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 80px;
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item {
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+}
+
+.testimonial-item p {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    background-color: #bbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #007bff;
+}

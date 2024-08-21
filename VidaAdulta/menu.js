@@ -44,3 +44,78 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
+
+let boxBuscar = document.querySelector('.buscar-box');
+let lupa = document.querySelector('.lupa-buscar');
+let btnFechar = document.querySelector('.btn-fechar');
+
+lupa.addEventListener('click', ()=> {
+    boxBuscar.classList.add('ativar')
+})
+
+btnFechar.addEventListener('click', ()=> {
+    boxBuscar.classList.remove('ativar')
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector('.testimonial-container');
+    const items = document.querySelectorAll('.testimonial-item');
+    const indicators = document.querySelectorAll('.indicator');
+    const itemCount = items.length;
+    const itemWidth = items[0].offsetWidth;
+    let currentIndex = 0;
+    let interval;
+
+    function moveToIndex(index) {
+        if (index >= itemCount) {
+            index = 0;
+        } else if (index < 0) {
+            index = itemCount - 1;
+        }
+        container.style.transform = `translateX(-${itemWidth * index}px)`;
+        updateIndicators(index);
+        currentIndex = index;
+    }
+
+    function moveNext() {
+        moveToIndex(currentIndex + 1);
+    }
+
+    function movePrev() {
+        moveToIndex(currentIndex - 1);
+    }
+
+    function updateIndicators(index) {
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+    }
+
+    function startCarousel() {
+        interval = setInterval(moveNext, 3000); // Move every 3 seconds
+    }
+
+    function stopCarousel() {
+        clearInterval(interval);
+    }
+
+    document.querySelector('.next').addEventListener('click', function() {
+        moveNext();
+        stopCarousel(); // Optional: Stop auto-rotation on user interaction
+    });
+
+    document.querySelector('.prev').addEventListener('click', function() {
+        movePrev();
+        stopCarousel(); // Optional: Stop auto-rotation on user interaction
+    });
+
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', function() {
+            const index = parseInt(this.dataset.index);
+            moveToIndex(index);
+            stopCarousel(); // Optional: Stop auto-rotation on user interaction
+        });
+    });
+
+    startCarousel();
+});
