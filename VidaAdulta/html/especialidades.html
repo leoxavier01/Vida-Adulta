@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="../css/especialidades.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Especialidades</title>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="../html/index.html">
+                    <img src="../images/logo.png" alt="Logo da Vida Adulta">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../html/index.html">Início</a></li>
+                    <li><a href="#">Especialidades</a>
+                        <ul class="sub-menu">
+                            <li><a href="../html/responsabilidades.html">Responsabilidades</a></li>
+                            <li><a href="../html/alistamento.html">Alistamento</a></li>
+                            <li><a href="../html/titulo.html">Titulo de Eleitor</a></li>
+                            <li><a href="../html/rg.html">Registro Geral</a></li>
+                            <li><a href="../html/cnh.html">CNH</a></li>
+                            <li><a href="../html/direitosdeveres.html">Direitos e Deveres</a></li>
+                            <li><a href="../html/financeiro.html">Planejador Financeiro Basico</a></li>
+                            <li><a href="../html/diretrizes.html">Diretrizes</a></li>
+                            <li><a href="../html/independencia.html">Guia de independencia Pessoal</a></li>
+                            <li><a href="../html/carreira.html">Guia de Carreira e Educação</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/sobre.html">Sobre</a></li>
+                    <li><a href="../html/feedback.html">Feedback</a></li>
+                    <li><a href="../html/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="../html/login.html">
+                    <button href="../html/login.html">Login</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="../html/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <!-- Seção de cards abaixo da navegação -->
+    <div class="card-container">
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #00ff00;"></div>
+            <div class="card-content">
+                <h3>Responsabilidades Financeiras</h3>
+                <p>Ensinamos a administrar suas finanças de forma responsável, cobrindo temas como orçamento, dívidas, investimentos e planejamento de gastos futuros.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #ff38ff;"></div>
+            <div class="card-content">
+                <h3>Alistamento</h3>
+                <p>Orientamos você no processo completo de alistamento militar, garantindo que cumpra seus deveres cívicos de forma simples e eficiente.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #42c3ff;"></div>
+            <div class="card-content">
+                <h3>Titulo de Eleitor</h3>
+                <p>Aprenda a emitir e utilizar seu título de eleitor, garantindo sua participação ativa nas eleições.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page2.html')">
+            <div class="card-image" style="background-color: #9B1C1E;"></div>
+            <div class="card-content">
+                <h3>Registro Geral</h3>
+                <p>Saiba como tirar ou renovar seu RG, documento essencial para sua identificação civil.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page3.html')">
+            <div class="card-image" style="background-color: #8A7A45;"></div>
+            <div class="card-content">
+                <h3>Carteira Nacional de Habilitação (CNH)</h3>
+                <p>Guiamos você pelos passos necessários para obter sua CNH e dirigir legalmente no Brasil.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #00ff00;"></div>
+            <div class="card-content">
+                <h3>Direitos e Deveres</h3>
+                <p>Entenda seus direitos e deveres como cidadão para exercer plenamente sua cidadania.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #ff38ff;"></div>
+            <div class="card-content">
+                <h3> Planejador Financeiro Básico</h3>
+                <p>Oferecemos ferramentas práticas para organizar suas finanças pessoais e atingir suas metas econômicas.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page1.html')">
+            <div class="card-image" style="background-color: #42c3ff;"></div>
+            <div class="card-content">
+                <h3>Diretrizes</h3>
+                <p>Apresentamos diretrizes importantes para ajudá-lo a tomar decisões conscientes e responsáveis na vida cotidiana.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page2.html')">
+            <div class="card-image" style="background-color: #9B1C1E;"></div>
+            <div class="card-content">
+                <h3>Guia de independencia Pessoal</h3>
+                <p>Fornecemos um guia prático para desenvolver sua autonomia e tomar o controle de sua vida.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="goToPage('page3.html')">
+            <div class="card-image" style="background-color: #8A7A45;"></div>
+            <div class="card-content">
+                <h3>Guia de Carreira e Educação</h3>
+                <p>Ajudamos você a planejar sua trajetória educacional e profissional, maximizando seu potencial e oportunidades no mercado de trabalho.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+<script>
+        function goToPage(pageUrl) {
+  window.location.href = pageUrl;
+}
+
+    </script>
+</body>
+    
+
+</html>
