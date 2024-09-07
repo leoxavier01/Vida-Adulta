@@ -824,3 +824,30 @@ footer .line-footer p a {
           row-gap: 15px;
         }
       }
+      
+      .buttons-container {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e0e0e0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        width: 60px;
+        text-align: center;
+      }
+      
+      .button span {
+        margin-left: 5px;
+      }
+      
+      .button:hover {
+        background-color: #d4d4d4;
+      }
+      

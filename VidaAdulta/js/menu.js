@@ -119,3 +119,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     startCarousel();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    let likeCount = 0;
+    let dislikeCount = 0;
+  
+    const likeBtn = document.getElementById('like-btn');
+    const dislikeBtn = document.getElementById('dislike-btn');
+
+
+
+
+    // Incrementa o número de likes a cada clique
+    likeBtn.addEventListener('click', () => {
+      likeCount++;
+      document.getElementById('like-count').textContent = likeCount;
+    });
+    // Incrementa o número de dislikes a cada clique
+    dislikeBtn.addEventListener('click', () => {
+      dislikeCount++;
+      document.getElementById('dislike-count').textContent = dislikeCount;
+    });
+    
+  });
+  
+
+
+  

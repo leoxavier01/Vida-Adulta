@@ -33,7 +33,7 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="../html/index.html">Início</a></li>
-                    <li><a href="#">Especialidades</a>
+                    <li><a href="especialidades.html">Especialidades</a>
                         <ul class="sub-menu">
                             <li><a href="../html/responsabilidades.html">Responsabilidades</a></li>
                             <li><a href="../html/alistamento.html">Alistamento</a></li>
@@ -87,24 +87,36 @@
         </div><!--interface-->
     </header>
 
-    <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <form>
-
-                            <h3>Login</h3>
-                            <input type="text" placeholder="Login" id="login">
-                            <input type="password" placeholder="Senha" id="senha">
-                            <input type="submit" onclick="logar(); return false">
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="imput-box">
+                    <input type="text" placeholder="Login" id="login">
+                    <input type="password" placeholder="Senha" id="senha">
                     
-                        </form>
-                    </div><!--txt-topo-site-->
-
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password</a>
+                    <input type="submit" onclick="logar(); return false">
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    
+    
+    
+    
+    
+    
+        <!-- <div id="login-b
+            <h3>Login</h3>
+            
+        
+        </div> -->
+                        
 
      
 </body>
