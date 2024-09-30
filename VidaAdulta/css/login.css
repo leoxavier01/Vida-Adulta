@@ -53,7 +53,7 @@ form .btn-enviar input:hover {
 /* ESTILO DO CABEÇALHO */
 header {
     background: rgb(252,252,252);
-background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(178,178,255,1) 22%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(178,178,255,1) 22%, #00d4ff 100%);
     padding: 40px 4%;
 }
 
@@ -729,10 +729,10 @@ footer .line-footer p a {
         }
       }
 
-#login-box{
-    position: relative;
-    width: 400px;
-    height: 440px;
+.wrapper{
+    position:absolute;
+    width: 450px;
+    height: 620px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.158);
     border-radius: 20px;
@@ -740,5 +740,26 @@ footer .line-footer p a {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+
 }
+
+.remember-forgot{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#submit-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #008cff;
+    color: white;
+}
+
+
